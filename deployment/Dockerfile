@@ -32,4 +32,4 @@ USER rushes
 EXPOSE 8000
 
 # Run the application.
-CMD ["uvicorn", "main:app", "--port", "8000", "--host", "0.0.0.0"]
+CMD ["uvicorn", "src.main:app", "--port", "8000", "--host", "0.0.0.0"]
