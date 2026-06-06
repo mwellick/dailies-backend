@@ -1,1 +1,1 @@
-# rushes-backend
+# dailies-backend

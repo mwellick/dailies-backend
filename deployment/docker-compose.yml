@@ -1,6 +1,6 @@
 services:
 
-  rushes:
+  dailies:
     build:
       context: ../
       dockerfile: ./deployment/Dockerfile
@@ -13,8 +13,8 @@ services:
     env_file:
       - .env
     volumes:
-      - ../:/rushes
-      - /rushes/.venv
+      - ../:/dailies
+      - /dailies/.venv
 
   postgres:
     image: postgres:18-bookworm

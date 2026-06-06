@@ -18,7 +18,7 @@ async def lifespan(app: FastAPI):
         await sessionmanager.close()
 
 
-app = FastAPI(lifespan=lifespan, title="Rushes API")
+app = FastAPI(lifespan=lifespan, title="Dailies API")
 app.include_router(api_router)
 
 
