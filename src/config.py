@@ -7,6 +7,7 @@ class AppSettings(BaseSettings):
     POSTGRES_DB: str
     POSTGRES_HOST: str = "postgres"
     POSTGRES_PORT: int = 5432
+    ECHO_SQL: bool
 
     @property
     def database_url(self) -> str:
